@@ -1,7 +1,6 @@
 #!/bin/bash
 
-VERSION=$(cat version.txt | xargs)
-DOCKER_VERSION=${VERSION}~trusty
+DOCKER_VERSION=1.7.1-0~trusty
 
 # Install dependencies
 sudo apt-get update
@@ -22,7 +21,3 @@ sudo apt-get install -y docker-engine=${DOCKER_VERSION}
 
 # Clean up
 sudo rm -rf /var/lib/apt/lists/*
-
-# User config
-sudo groupadd docker
-sudo usermod -aG docker $USER

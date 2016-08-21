@@ -1,4 +1,4 @@
-VERSION = `cat version.txt | xargs`
+VERSION = 1.7.1
 
 BOXES = /opt/vagrant/boxes
 BOX = $(BOXES)/docker_$(VERSION).box
@@ -20,7 +20,7 @@ testdir:
 print-box:
 	@echo $(BOX)
 
-.PHONY: build print-box testdir
+.PHONY: build testdir print-box
 #-------------------------------------------------------------------------------
 
 test:
