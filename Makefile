@@ -1,4 +1,4 @@
-VERSION = 1.7.1
+VERSION = `cat version.txt | xargs`
 
 BOXES = /opt/vagrant/boxes
 BOX = $(BOXES)/docker_$(VERSION).box

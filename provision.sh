@@ -1,6 +1,7 @@
 #!/bin/bash
 
-DOCKER_VERSION=1.7.1~trusty
+VERSION=$(cat version.txt | xargs)
+DOCKER_VERSION=${VERSION}~trusty
 
 sudo apt-get update
 sudo apt-get install -y \
