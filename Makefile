@@ -22,3 +22,20 @@ print-box:
 
 .PHONY: build print-box testdir
 #-------------------------------------------------------------------------------
+
+test:
+	@vagrant up
+	@vagrant ssh -c "docker run --rm hello-world"
+	@vagrant ssh -c "docker version"
+
+.PHONY: test
+#-------------------------------------------------------------------------------
+
+clean:
+	@vagrant destroy -f
+
+rmbox:
+	@rm -f $(BOX)
+
+.PHONY: clean rmbox
+#-------------------------------------------------------------------------------
