@@ -7,5 +7,8 @@ test:
 	@vagrant ssh -c "docker run --rm hello-world"
 	@vagrant ssh -c "docker version"
 
-.PHONY: test
+clean:
+	@vagrant destroy -f
+
+.PHONY: test clean
 #-------------------------------------------------------------------------------

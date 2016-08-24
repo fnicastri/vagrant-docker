@@ -37,8 +37,11 @@ dltest:
 clean:
 	@vagrant destroy -f
 
+dlclean:
+	@$(MAKE) -C test clean
+
 rmbox:
 	@rm -f $(BOX)
 
-.PHONY: clean rmbox
+.PHONY: clean dlclean rmbox
 #-------------------------------------------------------------------------------
