@@ -1,6 +1,6 @@
 # vagrant-docker
 
-Docker in a Vagrant box.
+Docker 1.7.1 in a Vagrant box.
 
 **Guest Additions Version**: 4.3.36
 
