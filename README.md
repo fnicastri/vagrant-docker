@@ -8,5 +8,6 @@ Docker in a Vagrant box.
 
 ## Available Versions
 
+* [1.12.1](https://github.com/mbodenhamer/vagrant-docker/tree/1.12.1)
 * [1.9.1](https://github.com/mbodenhamer/vagrant-docker/tree/1.9.1)
 * [1.7.1](https://github.com/mbodenhamer/vagrant-docker/tree/1.7.1)
