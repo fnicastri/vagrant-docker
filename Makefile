@@ -1,4 +1,4 @@
-VERSION = 1.7.1
+VERSION = 1.9.1
 
 BOXES = /opt/vagrant/boxes
 BOX = $(BOXES)/docker_$(VERSION).box
@@ -28,7 +28,10 @@ test:
 	@vagrant ssh -c "docker run --rm hello-world"
 	@vagrant ssh -c "docker version"
 
-.PHONY: test
+dltest:
+	@$(MAKE) -C test
+
+.PHONY: test dltest
 #-------------------------------------------------------------------------------
 
 clean:
