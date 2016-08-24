@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_VERSION=1.9.1-0~trusty
+DOCKER_VERSION=1.12.1-0~trusty
 
 # Install dependencies
 sudo apt-get update

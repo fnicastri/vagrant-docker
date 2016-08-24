@@ -1,4 +1,4 @@
-VERSION = 1.9.1
+VERSION = 1.12.1
 
 BOXES = /opt/vagrant/boxes
 BOX = $(BOXES)/docker_$(VERSION).box
