@@ -28,14 +28,20 @@ test:
 	@vagrant ssh -c "docker run --rm hello-world"
 	@vagrant ssh -c "docker version"
 
-.PHONY: test
+dltest:
+	@$(MAKE) -C test
+
+.PHONY: test dltest
 #-------------------------------------------------------------------------------
 
 clean:
 	@vagrant destroy -f
 
+dlclean:
+	@$(MAKE) -C test clean
+
 rmbox:
 	@rm -f $(BOX)
 
-.PHONY: clean rmbox
+.PHONY: clean dlclean rmbox
 #-------------------------------------------------------------------------------
